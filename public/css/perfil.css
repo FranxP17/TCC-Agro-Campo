@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  max-width: 400px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  padding: 2.5em 2em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container h1 {
+  color: #2d5c88;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+#profile-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+#profile-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #2d5c88;
+  font-size: 1.05em;
+}
+
+#profile-form input[type="text"],
+#profile-form input[type="email"],
+#profile-form input[type="password"] {
+  margin-top: 0.4em;
+  padding: 0.7em 1em;
+  border: 1px solid #b5c6d6;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+
+#profile-form input:focus {
+  border: 1.5px solid #2d5c88;
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #2d5c88 0%, #4fa3e3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #4fa3e3 0%, #2d5c88 100%);
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 0;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1.5em;
+  transition: background 0.2s;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+#profile-message {
+  margin-top: 1.2em;
+  font-size: 1.05em;
+  text-align: center;
+  color: #2d5c88;
+  min-height: 1.5em;
+}
+
+
+.btn-history {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #4fa3e3 0%, #2d5c88 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btn-history:hover {
+  background: linear-gradient(90deg, #2d5c88 0%, #4fa3e3 100%);
+}

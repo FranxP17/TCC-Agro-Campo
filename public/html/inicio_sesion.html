@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/loggim.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-header">
+        <h1>Iniciar Sesión</h1>
+        <p>Ingresa tus credenciales para acceder</p>
+      </div>
+
+      <form id="loginForm" class="login-form" action="/login" method="post">
+        <div class="form-group">
+          <label for="username">Usuario</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Ingresa tu usuario"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+          <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+
+        <div class="form-options">
+          <label> <input type="checkbox" name="remember" /> Recordarme </label>
+        </div>
+
+        <button type="submit" class="login-btn">Ingresar</button>
+
+        <div class="register-link">
+          ¿No tienes cuenta? <a href="../html/register.html">Regístrate aquí</a>
+        </div>
+
+        <div class="container-back-index">
+          <a href="../html/index.html"> Volver a la pagina Principal </a>
+        </div>
+      </form>
+    </div>
+    <script src="../js/loggim.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+  <!-- Loader global -->
+  <div id="global-loader" style="display: none">
+    <div class="loader-backdrop"></div>
+    <div class="loader-spinner">
+      <i class="fa fa-spinner fa-spin fa-3x"></i>
+      <p>Cargando...</p>
+    </div>
+  </div>
+</html>

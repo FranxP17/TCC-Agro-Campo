@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil - Agro-Campo</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
+    <!-- NUEVO -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="index.html" title="Inicio">
+          <img src="../img/Logo.jpg" alt="Logo Agro-Campo" />
+          <span>Agro-Campo</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i> Inicio</a>
+          </li>
+          <li>
+            <a href="carrito.html"
+              ><i class="fa fa-shopping-cart"></i> Carrito</a
+            >
+          </li>
+          <li>
+            <a href="historial.html"><i class="fa fa-list"></i> Historial</a>
+          </li>
+          <li>
+            <a href="perfil.html"><i class="fa fa-user"></i> Perfil</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="profile-container">
+      <h1>Mi Perfil</h1>
+      <form id="profile-form">
+        <label
+          >Nombre:
+          <input type="text" id="profile-name" required />
+        </label>
+        <label
+          >Email:
+          <input type="email" id="profile-email" required />
+        </label>
+        <label
+          >Usuario:
+          <input type="text" id="profile-username" required />
+        </label>
+        <label
+          >Contraseña:
+          <input
+            type="password"
+            id="profile-password"
+            placeholder="(Dejar en blanco para no cambiar)"
+          />
+        </label>
+        <button type="submit" class="btn-primary">Guardar Cambios</button>
+      </form>
+      <button id="delete-account" class="btn-danger">Eliminar Cuenta</button>
+      <div id="profile-message"></div>
+    </main>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>
