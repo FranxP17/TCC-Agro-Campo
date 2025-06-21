@@ -127,7 +127,8 @@ module.exports = db;
 
 ## 👨‍💻 Autor
 
-* **Francisco Páez**
-* GitHub: [@FranxP17](https://github.com/FranxP17)
+* Francisco Páez
+* Danilo Gomez
+* Keiner Hernandez
 
 ---
